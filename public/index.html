@@ -1,149 +1,250 @@
 <head>
-    <title>Rat Scanner</title>
-    <link rel="icon" type="image/png" href="media/RatLogo.png" />
-
-    <style>
-        html * {
-            font-family: roboto !important;
-        }
-
-        h1 {
-            font-size: 3.5em;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            font-size: 1.5em;
-            margin: 15px;
-        }
-
-        a {
-            color: #E0E0E0;
-            text-decoration: none;
-            margin-right: 30px;
-            font-weight: bold;
-            font-size: 1.3em;
-        }
-    </style>
+  <title>Rat Scanner</title>
+  <link rel="icon" type="image/png" href="media/RatLogo.png" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
-<body style="background-color: #2A2A2A; margin: 0px;">
-    <div style="flex-direction: column; align-items: center; display: flex;">
-        <div id="header"
-            style="margin-top: 15px; display: flex; justify-content: space-between; align-items: center; width: 60%;">
-            <div>
-                <img src="media/RatLogo.png" style="width: 80px; margin: 10px" />
-            </div>
-            <div>
-                <a href="#minimal-ui">Minimal UI</a>
-                <a href="#showcase">Showcase</a>
-                <a href="#installing">Installing</a>
-            </div>
-        </div>
+<body style="background-color: #2a2a2a; margin: 0px">
+  <a class="arrow" href="#minimal-ui"></a>
 
-        <hr style="width: 60%;">
-
-        <div id="main" style="color: #E0E0E0; margin-top: 110px; margin-bottom: 110px;">
-            <div id="content"
-                style="display: flex; padding: 75px; justify-content: center; align-items: center; object-fit: contain;">
-                <div style="width: 35%; margin-right: 50px;">
-                    <h1 style="margin: 0px;">Rat Scanner</h1>
-                    <p style="font-size: 1.5em; margin: 0px;">
-                        Open Source tool for Escape from Tarkov
-                    </p>
-                    <hr style="margin-top: 2em; margin-bottom: 2em;">
-                    <p style="font-size: 1.5em;">
-                        Rat Scanner allows you to scan items and provides you with realtime data about them.
-                    </p>
-                    <p style="font-size: 1.5em;">
-                        Items can be scanned instantly at any time!
-                    </p>
-                </div>
-                <div>
-                    <img src="media/IconScan.gif"
-                        style="background-color: #2A2A2A; width: 400px; margin-right: 40px;" />
-                </div>
-            </div>
-        </div>
-
-        <div id="minimal-ui" style="color: #2A2A2A;">
-            <img src="media/Wave1.png" style="width: 100%; height: 100px; transform: scaleX(-1);">
-            <div id="content"
-                style="display: flex; padding: 75px; background-color: #FBBCCD; justify-content: center; align-items: center; object-fit: contain;">
-                <div>
-                    <img src="media/MinimalUI.png"
-                        style="box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5); background-color: #2A2A2A; border-radius: 10px; width: 325px; margin-right: 40px;" />
-                </div>
-                <div>
-                    <h1 style="margin: 0px;">Minimal UI</h1>
-                    <h2 style="margin-bottom: 3em;">View all the data without distraction</h2>
-                    <ul style="margin-bottom: 0px;">
-                        <li>Overlay it anywhere in your game</li>
-                        <li>Adjust the background opacity to your liking</li>
-                        <li>Make it show only the data you want to see</li>
-                    </ul>
-                </div>
-            </div>
-            <img src="media/Wave2.png" style="width: 100%; height: 100px; transform: scaleX(-1);">
-        </div>
-
-        <div id="showcase"
-            style="display: flex; color: #E0E0E0; flex-direction: column; align-items: center; margin-top: 100px; margin-bottom: 150px;">
-            <h1>Showcase</h1>
-            <div style="display: flex; justify-content: center; object-fit: scale-down; flex-wrap: wrap;">
-                <img src="media/NameScan.gif" style="margin: 20px;">
-                <img src="media/IconScan.gif" style="margin: 20px;">
-            </div>
-        </div>
-
-        <div id="installing" style="color: #2A2A2A;">
-            <img src="media/Wave1.png" style="width: 100%; height: 100px;">
-            <div id="content"
-                style="display: flex; flex-direction: column; padding-top: 75px; padding-bottom: 75px; background-color: #FBBCCD; justify-content: center; align-items: center; object-fit: contain; width: 100%;">
-                <div style="padding: 20px;">
-                    <h1 style="margin: 0px;">Installing</h1>
-                    <ul style="margin: 0px;">
-                        <li> Extract the downloaded ZIP-Archive anywhere on your PC</li>
-                        <li>Start Rat Scanner by launching
-                            <span style="background-color: #FDDEE6;">&nbsp;RatScanner.exe&nbsp;</span>
-                        </li>
-                        <li>Once launched, go to the settings and set your resolution</li>
-                    </ul>
-                </div>
-                <button
-                    onclick="location.href='https://github.com/Blightbuster/RatScanner/releases/latest/download/RatScanner.zip'"
-                    type="button"
-                    style="box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5); width: 350px; margin: 30px; height: 50px; background-color: #2A2A2A; text-decoration: none; border: none; font-size: 1.8em; color: #E0E0E0; font-weight: bold; border-radius: 10px;">
-                    Download from GitHub
-                </button>
-
-                <div style="margin-top: 20px;">
-                    <a href="https://patreon.com/RatScanner">
-                        <img
-                            src="https://img.shields.io/badge/dynamic/json?color=%23e85b46&label=Patreon&query=data.attributes.patron_count&suffix=%20patrons&url=https%3A%2F%2Fwww.patreon.com%2Fapi%2Fcampaigns%2F4117180&style=for-the-badge&logo=patreon" />
-                    </a>
-
-                    <a href="https://paypal.me/mscheve">
-                        <img
-                            src="https://img.shields.io/static/v1?&label=PayPal&message=Donate&color=0079C1&style=for-the-badge&logo=paypal" />
-                    </a>
-
-                    <a href="https://discord.gg/aHZf7aP">
-                        <img
-                            src="https://img.shields.io/discord/687549250435153930?label=Discord&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2&style=for-the-badge" />
-                    </a>
-                </div>
-
-                <h2 style="margin-top: 100px;">Doesn't work?</h2>
-                <button onclick="location.href='https://github.com/Blightbuster/RatScanner/blob/master/FAQ.md'"
-                    type="button"
-                    style="box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5); width: 180px; height: 40px; background-color: #2A2A2A; text-decoration: none; border: none; font-size: 1.4em; color: #E0E0E0; font-weight: bold; border-radius: 10px;">
-                    Check the FAQ
-                </button>
-            </div>
-        </div>
+  <div style="flex-direction: column; align-items: center; display: flex">
+    <div
+      id="header"
+      style="
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+      "
+    >
+      <div>
+        <img src="media/RatLogo.png" style="width: 80px; margin: 10px" />
+      </div>
+      <div>
+        <a class="headerLink" href="#minimal-ui">Minimal UI</a>
+        <a class="headerLink" href="#tarkovtracker">Quests & Hideout</a>
+        <a class="headerLink" href="#installing">Installing</a>
+      </div>
     </div>
+
+    <hr style="width: 60%" />
+
+    <div
+      id="main"
+      style="color: #e0e0e0; margin-top: 110px; margin-bottom: 110px"
+    >
+      <div
+        id="content"
+        style="
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center;
+          object-fit: contain;
+        "
+      >
+        <div
+          style="
+            display: flex;
+            padding: 75px;
+            justify-content: center;
+            align-items: center;
+            object-fit: contain;
+          "
+        >
+          <div style="width: 35%; margin-right: 50px">
+            <h1 style="margin: 0px">Rat Scanner</h1>
+            <p style="font-size: 1.5em; margin: 0px">
+              <a
+                href="https://github.com/RatScanner/RatScanner"
+                style="text-decoration: none"
+                >Open Source</a
+              >
+              tool for
+              <a
+                href="https://www.escapefromtarkov.com/"
+                style="text-decoration: none"
+                >Escape from Tarkov</a
+              >
+            </p>
+            <hr style="margin-top: 2em; margin-bottom: 2em" />
+            <p style="font-size: 1.5em">
+              Rat Scanner allows you to scan items and provides you with
+              realtime data about them.
+            </p>
+            <p style="font-size: 1.5em">
+              Items can be scanned instantly at any time!
+            </p>
+          </div>
+          <div>
+            <img
+              src="media/IconScan.gif"
+              style="
+                background-color: #2a2a2a;
+                width: 400px;
+                margin-right: 40px;
+              "
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="minimal-ui" style="color: #2a2a2a">
+      <img
+        src="media/Wave1.png"
+        style="
+          width: 100%;
+          height: 100px;
+          transform: scaleX(-1);
+          margin-bottom: -1px;
+        "
+      />
+      <div
+        id="content"
+        style="
+          display: flex;
+          padding: 75px;
+          background-color: #ffbccd;
+          justify-content: center;
+          align-items: center;
+          object-fit: contain;
+        "
+      >
+        <div>
+          <img
+            src="media/MinimalUI.png"
+            style="
+              box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
+              background-color: #2a2a2a;
+              border-radius: 10px;
+              width: 325px;
+              margin-right: 60px;
+              padding: 10px;
+            "
+          />
+        </div>
+        <div>
+          <h1 style="margin: 0px">Minimal UI</h1>
+          <h2 style="margin-bottom: 3em">
+            View all the data without distraction
+          </h2>
+          <ul style="margin-bottom: 0px">
+            <li>Overlay it anywhere in your game</li>
+            <li>Adjust the background opacity to your liking</li>
+            <li>Make it show only the data you want to see</li>
+          </ul>
+        </div>
+      </div>
+      <img
+        src="media/Wave2.png"
+        style="width: 100%; height: 100px; transform: scaleX(-1)"
+      />
+    </div>
+
+    <div
+      id="tarkovtracker"
+      style="
+        display: flex;
+        color: #e0e0e0;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 150px;
+        margin-bottom: 150px;
+      "
+    >
+      <h1>Quests & Hideout</h1>
+      <ul>
+        <li>
+          Connect RatScanner to
+          <a href="https://tarkovtracker.io/">TarkovTracker.io</a> via a API
+          Token
+        </li>
+        <li>
+          RatScanner tells you what items to keep for quests and your hideout
+        </li>
+        <li>
+          See items needed by teammates after creating a live team on
+          <a href="https://tarkovtracker.io/">TarkovTracker.io</a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="installing" style="color: #2a2a2a">
+      <img src="media/Wave1.png" style="width: 100%; height: 100px" />
+      <div
+        id="content"
+        style="
+          display: flex;
+          flex-direction: column;
+          padding-top: 75px;
+          padding-bottom: 75px;
+          background-color: #ffbccd;
+          justify-content: center;
+          align-items: center;
+          object-fit: contain;
+          width: 100%;
+        "
+      >
+        <div>
+          <h1>Installing</h1>
+          <ul>
+            <li>Extract the downloaded ZIP-Archive anywhere on your PC</li>
+            <li>
+              Start Rat Scanner by launching
+              <span style="background-color: #fddee6"
+                >&nbsp;RatScanner.exe&nbsp;</span
+              >
+            </li>
+            <li>Once launched, go to the settings and set your resolution</li>
+          </ul>
+        </div>
+
+        <div>
+          <a href="https://patreon.com/RatScanner">
+            <img
+              src="https://img.shields.io/badge/dynamic/json?color=%23e85b46&label=Patreon&query=data.attributes.patron_count&suffix=%20patrons&url=https%3A%2F%2Fwww.patreon.com%2Fapi%2Fcampaigns%2F4117180&style=for-the-badge&logo=patreon"
+            />
+          </a>
+
+          <a href="https://paypal.me/mscheve">
+            <img
+              src="https://img.shields.io/static/v1?&label=PayPal&message=Donate&color=0079C1&style=for-the-badge&logo=paypal"
+            />
+          </a>
+
+          <a href="https://discord.gg/aHZf7aP">
+            <img
+              src="https://img.shields.io/discord/687549250435153930?label=Discord&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2&style=for-the-badge"
+            />
+          </a>
+        </div>
+
+        <button
+          onclick="location.href='https://github.com/Blightbuster/RatScanner/releases/latest/download/RatScanner.zip'"
+          style="font-size: 2.4em; margin: 30px"
+        >
+          <img
+            src="media/RatLogo.png"
+            style="
+              width: 1.4em;
+              margin-top: -20px;
+              margin-bottom: -20px;
+              margin-left: -15px;
+              vertical-align: middle;
+            "
+          />
+          Download
+        </button>
+
+        <h2 style="margin-top: 100px">Doesn't work?</h2>
+        <button
+          onclick="location.href='https://github.com/Blightbuster/RatScanner/blob/master/FAQ.md'"
+        >
+          Check the FAQ
+        </button>
+      </div>
+    </div>
+  </div>
 </body>
